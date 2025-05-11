@@ -4,9 +4,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.lq.ciyuanda.mapper.PostFavourMapper">
+<mapper namespace="com.luoqing.ciyuanda.mapper.PostFavourMapper">
 
-    <resultMap id="BaseResultMap" type="com.lq.ciyuanda.model.entity.PostFavour">
+    <resultMap id="BaseResultMap" type="com.luoqing.ciyuanda.model.entity.PostFavour">
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="postId" column="postId" jdbcType="BIGINT"/>
         <result property="userId" column="userId" jdbcType="BIGINT"/>
