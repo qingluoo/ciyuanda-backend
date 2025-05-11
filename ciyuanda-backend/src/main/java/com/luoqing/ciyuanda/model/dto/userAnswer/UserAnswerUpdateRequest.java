@@ -1,4 +1,4 @@
-package com.luoqing.ciyuanda.model.dto.useranswer;
+package com.luoqing.ciyuanda.model.dto.userAnswer;
 
 import lombok.Data;
 

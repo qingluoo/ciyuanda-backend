@@ -1,4 +1,4 @@
-package com.luoqing.ciyuanda.model.dto.useranswer;
+package com.luoqing.ciyuanda.model.dto.userAnswer;
 
 import lombok.Data;
 
@@ -6,18 +6,19 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 创建用户答案请求
+ * 编辑用户答案请求
  *
  * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
  * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
  */
 @Data
-public class UserAnswerAddRequest implements Serializable {
+public class UserAnswerEditRequest implements Serializable {
 
     /**
-     * id（用户答案 id，用于保证提交答案的幂等性）
+     * id
      */
     private Long id;
+
 
     /**
      * 应用 id

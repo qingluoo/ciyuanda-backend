@@ -1,13 +1,10 @@
-package com.luoqing.ciyuanda.model.dto.useranswer;
+package com.luoqing.ciyuanda.model.dto.userAnswer;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.luoqing.ciyuanda.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * 查询用户答案请求
