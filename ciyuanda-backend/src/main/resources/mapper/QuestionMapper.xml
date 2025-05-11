@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.luoqing.ciyuanda.mapper.QuestionMapper">
+<mapper namespace="com.lq.ciyuanda.mapper.QuestionMapper">
 
-    <resultMap id="BaseResultMap" type="com.luoqing.ciyuanda.model.entity.Question">
+    <resultMap id="BaseResultMap" type="com.lq.ciyuanda.model.entity.Question">
             <id property="id" column="id" />
             <result property="questionContent" column="questionContent" />
             <result property="appId" column="appId" />
@@ -14,8 +14,5 @@
             <result property="isDelete" column="isDelete" />
     </resultMap>
 
-    <sql id="Base_Column_List">
-        id,questionContent,appId,userId,createTime,updateTime,
-        isDelete
-    </sql>
+
 </mapper>

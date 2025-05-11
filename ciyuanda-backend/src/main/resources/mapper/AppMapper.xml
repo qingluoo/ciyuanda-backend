@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.luoqing.ciyuanda.mapper.AppMapper">
+<mapper namespace="com.lq.ciyuanda.mapper.AppMapper">
 
-    <resultMap id="BaseResultMap" type="com.luoqing.ciyuanda.model.entity.App">
+    <resultMap id="BaseResultMap" type="com.lq.ciyuanda.model.entity.App">
             <id property="id" column="id" />
             <result property="appName" column="appName" />
             <result property="appDesc" column="appDesc" />
@@ -21,9 +21,4 @@
             <result property="isDelete" column="isDelete" />
     </resultMap>
 
-    <sql id="Base_Column_List">
-        id,appName,appDesc,appIcon,appType,scoringStrategy,
-        reviewStatus,reviewMessage,reviewerId,reviewTime,userId,
-        createTime,updateTime,isDelete
-    </sql>
 </mapper>

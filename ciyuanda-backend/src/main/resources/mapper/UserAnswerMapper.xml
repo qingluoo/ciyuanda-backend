@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.luoqing.ciyuanda.mapper.UserAnswerMapper">
+<mapper namespace="com.lq.ciyuanda.mapper.UserAnswerMapper">
 
-    <resultMap id="BaseResultMap" type="com.luoqing.ciyuanda.model.entity.UserAnswer">
+    <resultMap id="BaseResultMap" type="com.lq.ciyuanda.model.entity.UserAnswer">
             <id property="id" column="id" />
             <result property="appId" column="appId" />
             <result property="appType" column="appType" />
@@ -21,9 +21,5 @@
             <result property="isDelete" column="isDelete" />
     </resultMap>
 
-    <sql id="Base_Column_List">
-        id,appId,appType,scoringStrategy,choices,resultId,
-        resultName,resultDesc,resultPicture,resultScore,userId,
-        createTime,updateTime,isDelete
-    </sql>
+
 </mapper>
