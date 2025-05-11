@@ -1,9 +1,8 @@
 package com.luoqing.ciyuanda.model.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
+import java.io.Serializable;
 import java.util.Date;
 import lombok.Data;
 
@@ -13,7 +12,7 @@ import lombok.Data;
  */
 @TableName(value ="app")
 @Data
-public class App {
+public class App implements Serializable {
     /**
      * id
      */
@@ -85,4 +84,7 @@ public class App {
      */
     @TableLogic
     private Integer isDelete;
+
+    @TableField(exist = false)
+    private static final long serialVersionUID = 1L;
 }

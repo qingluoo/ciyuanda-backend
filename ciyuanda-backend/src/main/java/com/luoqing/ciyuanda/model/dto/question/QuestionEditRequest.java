@@ -1,15 +1,18 @@
 package com.luoqing.ciyuanda.model.dto.question;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 /**
  * 编辑题目请求
  *
- * 
- * 
+ * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
  */
 @Data
 public class QuestionEditRequest implements Serializable {
@@ -20,19 +23,9 @@ public class QuestionEditRequest implements Serializable {
     private Long id;
 
     /**
-     * 标题
+     * 题目内容（json格式）
      */
-    private String title;
-
-    /**
-     * 内容
-     */
-    private String content;
-
-    /**
-     * 标签列表
-     */
-    private List<String> tags;
+    private List<QuestionContentDTO> questionContent;
 
     private static final long serialVersionUID = 1L;
 }

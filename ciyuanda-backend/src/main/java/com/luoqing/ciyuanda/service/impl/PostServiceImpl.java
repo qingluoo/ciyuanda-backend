@@ -20,7 +20,6 @@ import com.luoqing.ciyuanda.model.vo.UserVO;
 import com.luoqing.ciyuanda.service.PostService;
 import com.luoqing.ciyuanda.service.UserService;
 import com.luoqing.ciyuanda.utils.SqlUtils;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,7 +36,7 @@ import org.springframework.stereotype.Service;
 /**
  * 帖子服务实现
  *
- * 
+ * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
  * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
 @Service
@@ -52,7 +51,6 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements Po
 
     @Resource
     private PostFavourMapper postFavourMapper;
-
 
     @Override
     public void validPost(Post post, boolean add) {
@@ -114,7 +112,6 @@ public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements Po
                 sortField);
         return queryWrapper;
     }
-
 
     @Override
     public PostVO getPostVO(Post post, HttpServletRequest request) {
