@@ -5,14 +5,18 @@
 <mapper namespace="com.luoqing.ciyuanda.mapper.QuestionMapper">
 
     <resultMap id="BaseResultMap" type="com.luoqing.ciyuanda.model.entity.Question">
-            <id property="id" column="id" />
-            <result property="questionContent" column="questionContent" />
-            <result property="appId" column="appId" />
-            <result property="userId" column="userId" />
-            <result property="createTime" column="createTime" />
-            <result property="updateTime" column="updateTime" />
-            <result property="isDelete" column="isDelete" />
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="questionContent" column="questionContent" jdbcType="VARCHAR"/>
+            <result property="appId" column="appId" jdbcType="BIGINT"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
     </resultMap>
 
-
+    <sql id="Base_Column_List">
+        id,questionContent,appId,
+        userId,createTime,updateTime,
+        isDelete
+    </sql>
 </mapper>

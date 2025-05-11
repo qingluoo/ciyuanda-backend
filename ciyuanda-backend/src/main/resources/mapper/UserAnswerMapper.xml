@@ -5,21 +5,27 @@
 <mapper namespace="com.luoqing.ciyuanda.mapper.UserAnswerMapper">
 
     <resultMap id="BaseResultMap" type="com.luoqing.ciyuanda.model.entity.UserAnswer">
-            <id property="id" column="id" />
-            <result property="appId" column="appId" />
-            <result property="appType" column="appType" />
-            <result property="scoringStrategy" column="scoringStrategy" />
-            <result property="choices" column="choices" />
-            <result property="resultId" column="resultId" />
-            <result property="resultName" column="resultName" />
-            <result property="resultDesc" column="resultDesc" />
-            <result property="resultPicture" column="resultPicture" />
-            <result property="resultScore" column="resultScore" />
-            <result property="userId" column="userId" />
-            <result property="createTime" column="createTime" />
-            <result property="updateTime" column="updateTime" />
-            <result property="isDelete" column="isDelete" />
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="appId" column="appId" jdbcType="BIGINT"/>
+            <result property="appType" column="appType" jdbcType="TINYINT"/>
+            <result property="scoringStrategy" column="scoringStrategy" jdbcType="TINYINT"/>
+            <result property="choices" column="choices" jdbcType="VARCHAR"/>
+            <result property="resultId" column="resultId" jdbcType="BIGINT"/>
+            <result property="resultName" column="resultName" jdbcType="VARCHAR"/>
+            <result property="resultDesc" column="resultDesc" jdbcType="VARCHAR"/>
+            <result property="resultPicture" column="resultPicture" jdbcType="VARCHAR"/>
+            <result property="resultScore" column="resultScore" jdbcType="INTEGER"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
     </resultMap>
 
-
+    <sql id="Base_Column_List">
+        id,appId,appType,
+        scoringStrategy,choices,resultId,
+        resultName,resultDesc,resultPicture,
+        resultScore,userId,createTime,
+        updateTime,isDelete
+    </sql>
 </mapper>
