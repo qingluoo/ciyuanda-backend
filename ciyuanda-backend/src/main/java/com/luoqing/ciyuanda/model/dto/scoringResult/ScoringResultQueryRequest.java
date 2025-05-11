@@ -1,4 +1,4 @@
-package com.luoqing.ciyuanda.model.dto.scoringresult;
+package com.luoqing.ciyuanda.model.dto.scoringResult;
 
 import com.luoqing.ciyuanda.common.PageRequest;
 import lombok.Data;
