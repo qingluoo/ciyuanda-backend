@@ -3,7 +3,7 @@ package com.luoqing.ciyuanda.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.luoqing.ciyuanda.model.dto.useranswer.UserAnswerQueryRequest;
+import com.luoqing.ciyuanda.model.dto.userAnswer.UserAnswerQueryRequest;
 import com.luoqing.ciyuanda.model.entity.UserAnswer;
 import com.luoqing.ciyuanda.model.vo.UserAnswerVO;
 

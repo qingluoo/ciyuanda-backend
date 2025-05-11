@@ -8,7 +8,7 @@ import com.luoqing.ciyuanda.common.ErrorCode;
 import com.luoqing.ciyuanda.constant.CommonConstant;
 import com.luoqing.ciyuanda.exception.ThrowUtils;
 import com.luoqing.ciyuanda.mapper.UserAnswerMapper;
-import com.luoqing.ciyuanda.model.dto.useranswer.UserAnswerQueryRequest;
+import com.luoqing.ciyuanda.model.dto.userAnswer.UserAnswerQueryRequest;
 import com.luoqing.ciyuanda.model.entity.App;
 import com.luoqing.ciyuanda.model.entity.User;
 import com.luoqing.ciyuanda.model.entity.UserAnswer;

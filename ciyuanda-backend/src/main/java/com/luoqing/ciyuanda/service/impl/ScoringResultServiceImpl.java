@@ -8,7 +8,7 @@ import com.luoqing.ciyuanda.common.ErrorCode;
 import com.luoqing.ciyuanda.constant.CommonConstant;
 import com.luoqing.ciyuanda.exception.ThrowUtils;
 import com.luoqing.ciyuanda.mapper.ScoringResultMapper;
-import com.luoqing.ciyuanda.model.dto.scoringresult.ScoringResultQueryRequest;
+import com.luoqing.ciyuanda.model.dto.scoringResult.ScoringResultQueryRequest;
 import com.luoqing.ciyuanda.model.entity.App;
 import com.luoqing.ciyuanda.model.entity.ScoringResult;
 import com.luoqing.ciyuanda.model.entity.User;
