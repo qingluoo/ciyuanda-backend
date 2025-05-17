@@ -19,8 +19,6 @@ import java.util.Map;
 /**
  * 自定义测评类应用评分策略
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
  */
 @ScoringStrategyConfig(appType = 1, scoringStrategy = 0)
 public class CustomTestScoringStrategy implements ScoringStrategy {
@@ -50,28 +48,30 @@ public class CustomTestScoringStrategy implements ScoringStrategy {
         QuestionVO questionVO = QuestionVO.objToVo(question);
         List<QuestionContentDTO> questionContent = questionVO.getQuestionContent();
 
+        int i = 0;
         // 遍历题目列表
         for (QuestionContentDTO questionContentDTO : questionContent) {
             // 遍历答案列表
-            for (String answer : choices) {
-                // 遍历题目中的选项
-                for (QuestionContentDTO.Option option : questionContentDTO.getOptions()) {
-                    // 如果答案和选项的key匹配
-                    if (option.getKey().equals(answer)) {
-                        // 获取选项的result属性
-                        String result = option.getResult();
+            String answer = choices.get(i++);
 
-                        // 如果result属性不在optionCount中，初始化为0
-                        if (!optionCount.containsKey(result)) {
+            // 遍历题目中的选项
+            for (QuestionContentDTO.Option option : questionContentDTO.getOptions()) {
+                // 如果答案和选项的key匹配
+                if (option.getKey().equals(answer)) {
+                    // 获取选项的result属性
+                    String result = option.getResult();
+
+                    // 如果result属性不在optionCount中，初始化为0
+                    if (!optionCount.containsKey(result)) {
                             optionCount.put(result, 0);
-                        }
-
-                        // 在optionCount中增加计数
-                        optionCount.put(result, optionCount.get(result) + 1);
                     }
+
+                    // 在optionCount中增加计数
+                    optionCount.put(result, optionCount.get(result) + 1);
                 }
             }
         }
+
 
         // 3. 遍历每种评分结果，计算哪个结果的得分更高
         // 初始化最高分数和最高分数对应的评分结果

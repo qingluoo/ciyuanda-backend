@@ -3,7 +3,6 @@ package com.luoqing.ciyuanda.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.luoqing.ciyuanda.annotation.AuthCheck;
 import com.luoqing.ciyuanda.common.*;
-import com.luoqing.ciyuanda.common.*;
 import com.luoqing.ciyuanda.constant.UserConstant;
 import com.luoqing.ciyuanda.exception.BusinessException;
 import com.luoqing.ciyuanda.exception.ThrowUtils;
@@ -27,7 +26,6 @@ import java.util.Date;
 
 /**
  * 应用接口
- *
  */
 @RestController
 @RequestMapping("/app")
